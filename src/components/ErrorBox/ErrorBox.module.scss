@@ -1,19 +1,28 @@
 @import '../../styles/settings.scss';
 
 .errorBox {
-  margin: ($base-size * 3) auto;
-  background: $color-warning;
+  margin: ($base-size * 4) ($base-size * 4);
+  background: linear-gradient(to top, $color-light, $color-warning);
   border-radius: $radius;
-  box-shadow: $box-shadow;
   padding: $base-size $base-size;
-  position: relative;
-  color: $color-light;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: $color-one;
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: $base-size * 30;
+  max-width: $base-size * 50;
+  font-size: 16px;
+  border: 2px solid;
+  border-color: $color-one;
+  font-style: italic;
+  box-shadow: 0 2px 4px $color-one, 0 4px 8px $color-light, 0 8px 16px $color-warning;
 
-  span {
+  span,
+  h1 {
     margin-right: $base-size;
+    -webkit-text-stroke: 1px $color-light;
+    text-shadow: 2px 2px 4px $color-warning;
   }
 }

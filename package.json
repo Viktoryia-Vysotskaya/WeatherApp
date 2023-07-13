@@ -10,14 +10,14 @@
     "font-awesome": "^4.7.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "sass": "^1.42.1",
     "shortid": "^2.2.16",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start && react-scripts start",
+    "build": "react-scripts --openssl-legacy-provider build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

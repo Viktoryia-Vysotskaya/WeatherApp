@@ -4,30 +4,50 @@
 .weatherSummary {
   display: flex;
   flex-wrap: wrap;
-  margin: ($base-size * 3) ($base-size * 3);
+  margin: ($base-size * 7) ($base-size * 3);
   background: $color-light;
   border-radius: $radius;
-  box-shadow: $box-shadow;
-  padding: $base-size $base-size;
+  box-shadow: 0 2px 4px $color-one, 0 4px 8px $color-success, 0 8px 16px $color-light;
+  padding: $base-size 40px;
   position: relative;
   color: $color-dark;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  border: 2px solid;
 
   .weatherIcon {
-    margin: 0 $base-size * 2;
+    margin: 0 $base-size * 4;
   }
 
   .weatherInfo {
     flex-grow: 1;
 
     h2 {
+      display: inline-block;
       font-size: $base-size * 3;
       margin: $base-size 0;
+      color: $color-success;
+      -webkit-text-stroke: 1px $color-dark;
+
+      span {
+        display: inline-block;
+        transform-origin: bottom center;
+        letter-spacing: 7px;
+
+        &:nth-child(odd) {
+          transform: translateY(-2px);
+        }
+
+        &:nth-child(even) {
+          transform: translateY(2px);
+        }
+      }
     }
-  
+
     p {
       font-size: $base-size * 2;
+      text-shadow: 2px 2px 4px $color-success;
     }
 
   }

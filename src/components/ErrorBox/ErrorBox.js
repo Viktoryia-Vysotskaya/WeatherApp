@@ -9,13 +9,13 @@ const ErrorBox = ({ children }) => {
         Error
       </h1>
       <p>
-        {children}
+        <strong> Oops! The city you entered is not recognized! </strong>
       </p>
     </div>
   );
 };
 
-ErrorBox.propTypes = { 
+ErrorBox.propTypes = {
   children: PropTypes.string
 };
 

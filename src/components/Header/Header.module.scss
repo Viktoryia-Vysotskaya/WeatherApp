@@ -1,8 +1,37 @@
 @import '../../styles/settings.scss';
 
 .title {
-  padding: ($base-size * 3) 0;
+  padding-top: ($base-size * 2);
+  margin-bottom: ($base-size * 10);
   text-align: center;
-  font-size: ($base-size * 3);
+  font-size: ($base-size * 6);
+  letter-spacing: 15px;
   text-transform: uppercase;
+  -webkit-text-stroke: 1px $color-success;
+  color: $color-one;
+  text-shadow: 2px 2px 4px $color-light;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.wave {
+  display: inline-block;
+  transform-origin: bottom center;
+}
+
+.wave:nth-child(odd) {
+  transform: translateY(-10px);
+}
+
+.wave:nth-child(even) {
+  transform: translateY(10px);
 }

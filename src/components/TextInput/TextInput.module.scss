@@ -3,9 +3,22 @@
 .input {
   min-width: 200px;
   background: $color-light;
-  border: 1px solid lighten($color-dark, 60%);
-  padding: $base-size ($base-size * 1.5);
-  margin: 0 0 $base-size 0;
-  font-family: $font-text;
-  border-radius: $radius;
+  padding: $base-size (
+    $base-size * 1.5
+  );
+margin: 0 ($base-size * 4) $base-size 0;
+font-family: $font-text;
+border-radius: $radius;
+border: 2px solid;
+border-color: $color-one;
+color: $color-warning;
+font-weight: bold;
+font-size: 20px;
+box-shadow: 0 2px 4px $color-one, 0 4px 8px $color-light, 0 8px 16px $color-one;
+}
+
+.input::placeholder {
+  color: $color-dark;
+  font-style: italic;
+  font-size: 14px;
 }
