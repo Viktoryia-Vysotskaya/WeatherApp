@@ -17,9 +17,7 @@ const WeatherSummary = ({ city, temp, icon, description }) => {
         <h2>
           {waves}
         </h2>
-        <p>
-          <strong>Temp:</strong> {temp} °C
-        </p>
+        {temp && <p><strong>Temp:</strong> {temp} °C</p>}
       </div>
     </section>
   );
